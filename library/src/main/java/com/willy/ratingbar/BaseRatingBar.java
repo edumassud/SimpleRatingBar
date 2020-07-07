@@ -379,7 +379,7 @@ public class BaseRatingBar extends LinearLayout implements SimpleRatingBar {
                 break;
             case MotionEvent.ACTION_MOVE:
                 if (!isScrollable()) {
-                    return false;
+                    return true;
                 }
 
                 handleMoveEvent(eventX);
